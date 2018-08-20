@@ -2,12 +2,17 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/dialogo_form"
-    android:padding="20dp"
-    >
+    android:layout_margin="20dp"
+    android:orientation="vertical">
 
-    <EditText
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/dialogo_form">
+
+        <EditText
         android:id="@+id/dialogo_et_nombre"
         style="@style/et_design"
         android:hint="Nombre"/>
@@ -38,5 +43,5 @@
             />
 
     </FrameLayout>
-
+    </LinearLayout>
 </LinearLayout>
