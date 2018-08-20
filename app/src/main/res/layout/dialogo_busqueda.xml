@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialogo_form"
+    android:padding="20dp"
+    >
+
+    <EditText
+        android:id="@+id/dialogo_et_nombre"
+        style="@style/et_design"
+        android:hint="Nombre"/>
+    <EditText
+        android:id="@+id/dialogo_et_sexo"
+        style="@style/et_design"
+        android:hint="Sexo"/>
+
+    <Button
+        android:id="@+id/dialogo_btn_aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_form2"
+        android:layout_marginTop="15dp"
+        android:text="Aceptar"
+        android:textColor="@color/colorFont"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cat_img"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

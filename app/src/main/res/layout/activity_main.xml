@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mostrar"
+            style="@style/btn_design"
+            android:text="Mostrar"/>
+        <Button
+            android:id="@+id/btn_agregar"
+            style="@style/btn_design"
+            android:text="Agregar" />
+
+         <Button
+             android:id="@+id/btn_editar"
+             style="@style/btn_design"
+             android:text="Editar"/>
+
+        <Button
+            android:id="@+id/btn_eliminar"
+            style="@style/btn_design"
+            android:text="Eliminar"/>
+        
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dog_img"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

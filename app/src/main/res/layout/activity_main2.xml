@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorBackground2"
+    tools:context=".Main2Activity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/cat_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Busqueda"
+            android:textColor="@color/colorFont"
+            android:textSize="30sp"/>
+
+
+    <EditText
+        android:id="@+id/et_nombre"
+        style="@style/et_design"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/et_especie"
+        style="@style/et_design"
+        android:hint="Especie"/>
+
+    <EditText
+        android:id="@+id/et_edad"
+        style="@style/et_design"
+        android:hint="Edad"/>
+
+    <EditText
+        android:id="@+id/et_sexo"
+        style="@style/et_design"
+        android:hint="Sexo"/>
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        style="@style/et_design"
+        android:hint="Descripción"/>
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_form"
+        android:text="Aceptar"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
