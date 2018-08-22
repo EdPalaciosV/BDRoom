@@ -96,7 +96,6 @@ public class Main2Activity extends AppCompatActivity {
 
         Animal animal = new Animal();
 
-        animal.setId(bundle.getInt("Id"));
         animal.setNombre(etNombre.getText().toString());
         animal.setEspecie(etEspecie.getText().toString());
         animal.setEdad(Integer.parseInt(etEdad.getText().toString()));
@@ -105,6 +104,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
         if (actualizar!=null && actualizar.equalsIgnoreCase("actualizar")){
+            animal.setId(bundle.getInt("Id"));
             dataBase.daoAnimal().updateAnimal(animal);
         }
         else {
